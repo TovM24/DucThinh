@@ -1,8 +1,9 @@
 import React, { useState, useRef } from "react";
 import { User, ChevronDown  } from "lucide-react"
 import { Link } from "react-router-dom";
-import logo from "../Assets/logo.png";
-import nav_dropdown from "../Assets/nav-dropdown.png"
+// import logo from "../Assets/logo.png";
+// import nav_dropdown from "../Assets/nav-dropdown.png
+
 import './Navbar.css'
 
 const Navbar = () => {
@@ -18,7 +19,7 @@ const Navbar = () => {
     return (
         <div className="navbar">
             <div className="nav-logo">
-                <img src={logo} alt=""/>
+                {/* <img src={logo} alt=""/> */}
                 <p>Duc Thinh</p>
             </div>
 

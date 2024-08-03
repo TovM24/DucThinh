@@ -1,5 +1,5 @@
 import React from 'react'
-import brand_item from '../Assets/BrandProduct/data'
+import brand_item from '../Assets/brands'
 import { Link } from 'react-router-dom'
 import './BrandProduct.css'
 

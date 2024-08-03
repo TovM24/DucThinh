@@ -1,7 +1,7 @@
 import React from 'react'
 import { TrendingUp, ChevronRight, ChevronLeft  } from "lucide-react"
-import data_product from '../Assets/TrendingTech/data';
-import TrendingTechItem from '../TrendingTechItem/TrendingTechItem'
+import data_product from '../Assets/trending';
+import TrendingTechItem from '../Item/Item'
 import './TrendingTech.css'
 
 const TrendingTech = () => {
@@ -9,7 +9,7 @@ const TrendingTech = () => {
         <div className='offers'>
             <div className="offers-top offers-shared">
                 {/* set text aligin center */}
-                <div className="offers-top-left offers-shared">
+                <div className="offers-top-leftt offers-shared">
                     <TrendingUp />
                     <h1>Trending Tech</h1>
                 </div>
@@ -33,9 +33,10 @@ const TrendingTech = () => {
             </div>
 
             <div className="offers-bottom">
+                {/* key={i} */}
                 {data_product.map((item, i) => {
-                    return <TrendingTechItem key={i} id={item.id}name={item.name} subtitle={item.sub} image={item.image} price={item.price}/>
-                })} 
+                    return <TrendingTechItem type="trendy" variant="itemm" key={i} id={item.id} name={item.name} subtitle={item.sub} image={item.image} current_price={item.current_price} previous_price={item.previous_price} color={item.color}/>
+                })}
             </div>
         </div>
     )

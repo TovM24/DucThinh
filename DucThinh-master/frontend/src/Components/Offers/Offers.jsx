@@ -1,7 +1,7 @@
 import React from 'react'
 import { CircleDivide, ChevronRight, ChevronLeft  } from "lucide-react"
-import data_product from '../Assets/Offers/data';
-import OffersItem from '../OffersItem/OffersItem';
+import data_product from '../Assets/product';
+import OffersItem from '../Item/Item';
 import './Offers.css'
 
 
@@ -35,8 +35,8 @@ const Offers = () => {
 
             <div className="offers-bottom">
                 {data_product.map((item, i) => {
-                    return <OffersItem key={i} id={item.id}name={item.name} subtitle={item.sub} image={item.image} price={item.price}/>
-                })} 
+                    return <OffersItem key={i} type="trendy" variant="itemm" id={item.id} name={item.name} subtitle={item.sub} image={item.image} current_price={item.current_price} previous_price={item.previous_price} color={item.color}/>
+                })}
             </div>
         </div>
     )

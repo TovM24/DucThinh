@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ChevronRight, ChevronLeft, ArrowRight } from "lucide-react";
 import '../Navbar/Navbar.css'
 import './Slider.css';
-import demoImage from '../Assets/demo.jpg';
+import demoImage from '../Assets/item1.png';
 
 const Slider = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
