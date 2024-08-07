@@ -115,6 +115,10 @@
     /* background: #ccc; */
 }
 
+.offers-toggle-view {
+    display: none;
+}
+
 /* ///////////////////////////////////////////////////////// */
 
 @media (max-width: 1400px) {
@@ -130,7 +134,7 @@
 
     .offers-top {
         justify-content: center;
-        marign-bottom: 50px;
+        margin-bottom: 130px;
     }
 
     .offers-bottom {

@@ -53,11 +53,11 @@ const TrendingTech = () => {
             </div>
 
             <div className="offers-toggle-view offers-top-right">
-                <div className="show-all offers-shared">
+                {/* <div className="show-all offers-shared">
                     <h1>Show All</h1>
                     <p>20</p>
                     <ChevronRight />
-                </div>
+                </div> */}
 
                 <div className="navigation-button offers-shared">
                     <div className="navigation-item offers-shared">
