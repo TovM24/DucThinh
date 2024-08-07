@@ -125,37 +125,34 @@
 }
 
 .item-banner p {
+    margin-bottom: 10px;
     color: #fff;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 600;
     letter-spacing: .5px;
     overflow: hidden;
     -webkit-line-clamp: 1   
 }
-/* 
-.item-banner .banner,
-.item-banner .banner img {
-    clip-path: inset(50px 0 0 0);
-} */
     
 .item-banner .banner {
     width: 230px;
-    height: 230px;
-    background: blue;
+    height: 170px;
+    /* background: blue; */
     overflow: hidden;
 }
 
 .item-banner .banner img {
-    background: red;
+    /* background: red; */
     width: 100%; 
     height: 100%;
     object-fit: cover;
+    object-position: center bottom;
     transition: transform 0.3s ease;
-    clip-path: inset(50px 0 0 0);
+    transform: scale(1.1);
 }
 
 .item-banner .banner img:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .banner-sale {
@@ -163,7 +160,7 @@
     justify-content: center;
     align-items: center;
     color: #fff;
-    font-size: 35px;
+    font-size: 45px;
     font-weight: 800;
     line-height: 1;
 }
@@ -171,6 +168,72 @@
 .banner-sale p {
     margin-left: 10px;
     margin-top: 2px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
+}
+
+/* ///////////////////////////////////////////////////////// */
+
+@media (max-width: 1400px) {
+
+}
+
+/* ///////////////////////////////////////////////////////// */
+
+@media (max-width: 1280px) {
+    .item-img {
+        margin-bottom: 15px;
+    }
+
+    .item-img img {
+        transform: translateX(-50%) scale(1.2);
+    }
+
+    .item-img img:hover {
+        transform: translateX(-50%) scale(1.3)
+    }
+
+    .item-name .category-name {
+        font-size: 24px;
+    }
+
+    .item-subtitle {
+        font-size: 16px; 
+    }
+
+    .item-prices .item-price-sale {
+        font-size: 40px;
+    }
+
+    .item-prices .item-price-sale p {
+        font-size: 24px;
+    }
+}
+
+/* ///////////////////////////////////////////////////////// */
+
+@media (max-width: 1024px) {
+    
+}
+
+/* ///////////////////////////////////////////////////////// */
+
+@media (max-width: 800px) {
+    .item-container {
+        width: 350px;
+    }
+}
+
+/* ///////////////////////////////////////////////////////// */
+
+@media (max-width: 500px) {
+    
+}
+
+/* ///////////////////////////////////////////////////////// */
+
+@media (max-width: 400px) {
+    .item-container {
+        width: 280px;
+    }
 }

@@ -6,7 +6,7 @@ import './BrandProduct.css'
 const BrandProduct = () => {
     return (
         <div className="product">
-            <h1>Best Brand Products</h1>
+            <h1>Top Products</h1>
             <div className="product-item">
                 {brand_item.map((item, i) => {
                     return (

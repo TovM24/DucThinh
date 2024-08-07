@@ -7,21 +7,21 @@ import item3 from './item3.png';
 const offers = [
     {
         id: 1,
-        name: "Smart Televisions",
+        name: "Laptop",
         discount: 20,
         image: item1,
         color: "#8265d3"
     },
     {
         id: 2,
-        name: "Smart Televisions",
+        name: "Headphone",
         discount: 20,
         image: item2,
         color: "#649dd2"
     },
     {
         id: 3,
-        name: "Smart Televisions",
+        name: "Sccessory",
         discount: 20,
         image: item3,
         color: "#64d289"

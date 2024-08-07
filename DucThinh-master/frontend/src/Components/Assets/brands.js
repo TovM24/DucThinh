@@ -7,22 +7,18 @@ import brand5 from './brand5.png';
 let brands = [
     {
         id: 1,
-        image: brand1,
-    },
-    {
-        id: 2,
         image: brand2,
     },
     {
-        id: 3,
+        id: 2,
         image: brand3,
     },
     {
-        id: 4,
+        id: 3,
         image: brand4,
     },
     {
-        id: 5,
+        id: 4,
         image: brand5,
     }
 ];

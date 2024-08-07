@@ -99,6 +99,101 @@ let data_product = [
             standard: "Non-EVO"
         }
     },
+    {
+        id: 6,
+        name: "Laptop ACER Gaming Aspire 5 A515-58GM-53PZ (i5-13420H/RAM 8GB/GeForce RTX 2050/512GB SSD/ Windows 11)",
+        previous_price: "20.490.000",
+        current_price: "16.990.000",
+        image: item1,
+        color: "#333335",
+        specifications: {
+            cpu: "Intel Core i5-13420H",
+            screen: "15.6\" IPS (1920 x 1080)",
+            ram: "1 x 8GB DDR4 3200MHz",
+            graphics: "GeForce RTX 2050 4GB GDDR6 / Intel Iris Xe Graphics",
+            storage: "512GB SSD M.2 NVMe",
+            os: "Windows 11 Home",
+            battery: "50 Wh Pin liền",
+            weight: "1.7kg",
+            standard: "Non-EVO"
+        }
+    },
+    {
+        id: 7,
+        name: "Laptop ACER Gaming Aspire 5 A515-58GM-53PZ (i5-13420H/RAM 8GB/GeForce RTX 2050/512GB SSD/ Windows 11)",
+        previous_price: "20.490.000",
+        current_price: "16.990.000",
+        image: item2,
+        color: "#333335",
+        specifications: {
+            cpu: "Intel Core i5-13420H",
+            screen: "15.6\" IPS (1920 x 1080)",
+            ram: "1 x 8GB DDR4 3200MHz",
+            graphics: "GeForce RTX 2050 4GB GDDR6 / Intel Iris Xe Graphics",
+            storage: "512GB SSD M.2 NVMe",
+            os: "Windows 11 Home",
+            battery: "50 Wh Pin liền",
+            weight: "1.7kg",
+            standard: "Non-EVO"
+        }
+    },
+    {
+        id: 8,
+        name: "Laptop ACER Gaming Aspire 5 A515-58GM-53PZ (i5-13420H/RAM 8GB/GeForce RTX 2050/512GB SSD/ Windows 11)",
+        previous_price: "20.490.000",
+        current_price: "16.990.000",
+        image: item3,
+        color: "#333335",
+        specifications: {
+            cpu: "Intel Core i5-13420H",
+            screen: "15.6\" IPS (1920 x 1080)",
+            ram: "1 x 8GB DDR4 3200MHz",
+            graphics: "GeForce RTX 2050 4GB GDDR6 / Intel Iris Xe Graphics",
+            storage: "512GB SSD M.2 NVMe",
+            os: "Windows 11 Home",
+            battery: "50 Wh Pin liền",
+            weight: "1.7kg",
+            standard: "Non-EVO"
+        }
+    },
+    // {
+    //     id: 9,
+    //     name: "Laptop ACER Gaming Aspire 5 A515-58GM-53PZ (i5-13420H/RAM 8GB/GeForce RTX 2050/512GB SSD/ Windows 11)",
+    //     previous_price: "20.490.000",
+    //     current_price: "16.990.000",
+    //     image: item4,
+    //     color: "#333335",
+    //     specifications: {
+    //         cpu: "Intel Core i5-13420H",
+    //         screen: "15.6\" IPS (1920 x 1080)",
+    //         ram: "1 x 8GB DDR4 3200MHz",
+    //         graphics: "GeForce RTX 2050 4GB GDDR6 / Intel Iris Xe Graphics",
+    //         storage: "512GB SSD M.2 NVMe",
+    //         os: "Windows 11 Home",
+    //         battery: "50 Wh Pin liền",
+    //         weight: "1.7kg",
+    //         standard: "Non-EVO"
+    //     }
+    // },
+    // {
+    //     id: 10,
+    //     name: "Laptop ACER Gaming Aspire 5 A515-58GM-53PZ (i5-13420H/RAM 8GB/GeForce RTX 2050/512GB SSD/ Windows 11)",
+    //     previous_price: "20.490.000",
+    //     current_price: "16.990.000",
+    //     image: item4,
+    //     color: "#333335",
+    //     specifications: {
+    //         cpu: "Intel Core i5-13420H",
+    //         screen: "15.6\" IPS (1920 x 1080)",
+    //         ram: "1 x 8GB DDR4 3200MHz",
+    //         graphics: "GeForce RTX 2050 4GB GDDR6 / Intel Iris Xe Graphics",
+    //         storage: "512GB SSD M.2 NVMe",
+    //         os: "Windows 11 Home",
+    //         battery: "50 Wh Pin liền",
+    //         weight: "1.7kg",
+    //         standard: "Non-EVO"
+    //     }
+    // },
 ]
 
 export default data_product

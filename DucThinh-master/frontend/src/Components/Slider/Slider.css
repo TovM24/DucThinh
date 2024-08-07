@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 60px 0 150px 0;
+    margin: 60px 0 180px 0;
 }
     
 .slider-container {
@@ -20,6 +20,7 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border: none;
     border-radius: 30px;
+    margin: 0 30px;
 }
 
 .slider-wrapper {
@@ -36,6 +37,7 @@
     height: 100%;
     box-sizing: border-box;
     text-align: center;
+    /* margin: 0 200px 200px 200px; */
 }
 
 .slide .bg-image {
@@ -88,11 +90,6 @@
     color: #5a5a5c;
 }
 
-.slide-button {
-    display: flex; 
-    margin-top: 30px;
-}
-
 .nav {
     position: absolute;
     top: 50%;
@@ -100,9 +97,6 @@
     background-color: rgba(0,0,0,0.5);
     color: #8262d2;
     border: none;
-    /* padding: 20px; */
-    /* width: 50px; */
-    /* height: 50px;  */
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -111,34 +105,142 @@
     cursor: pointer;
     border-radius: 360px;
     z-index: 2;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .nav.prev {
     left: 10px;
-
 }
 
 .nav.next {
     right: 10px;
 }
 
+.nav.prev:active,
+.nav.next:active {
+    transform: scale(0.9) translateY(-50%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
 
-.nav-login-cart {
+
+.button-main {
     display: flex;
     align-items: center;
     gap: 45px;
 }
 
+.button-main button {
+    width: 250px; 
+    height: 50px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+    letter-spacing: 2px;
+    box-shadow: 0 0 8px rgba(130, 98, 210, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+.button-main button:hover {
+    box-shadow: 0 0 16px rgba(130, 98, 210, 0.7);
+}
+
+.button-main button svg {
+    width: 28px;
+    height: 28px;
+}
+
 .slide-button {
+    display: flex;
+    align-items: center;
+    gap: 45px;
     margin-top: 40px;
 }
-    
-.nav-login-cart .button-none-active {
+
+.slide-button .button-none-active {
     box-shadow: none;
     border: 1px solid #8262d2;
     color: #8262d2;
 }
 
-.nav-login-cart ..button-none-active:hover {
+.slide-button ..button-none-active:hover {
     box-shadow: 0 0 16px rgba(130, 98, 210, 0.7);
+}
+
+/* ///////////////////////////////////////////////////////// */
+
+@media (max-width: 1280px) {
+
+}
+
+/* ///////////////////////////////////////////////////////// */
+
+@media (max-width: 1024px) {
+    
+}
+
+/* ///////////////////////////////////////////////////////// */
+
+@media (max-width: 800px) {
+    
+    .slide h1 {
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+    
+    .slide h3 {
+        font-size: 20px;
+        font-weight: 300;
+    }
+    
+    .slide-description {
+        width: 380px;
+        font-size: 12px;
+        font-weight: 600;
+        margin-top: 15px;
+    }
+
+    .slide-button {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .button-main button {
+        width: 280px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .nav.prev,
+    .nav.next {
+        display: none;
+    }
+}
+
+/* ///////////////////////////////////////////////////////// */
+
+@media (max-width: 500px) {
+    .slider-container {
+        margin: 0 30px;
+        border-radius: 30px;
+    }
+
+    .slide-description {
+        width: 300px;
+    }
+
+    .nav.prev,
+    .nav.next {
+        display: none;
+    }
 }

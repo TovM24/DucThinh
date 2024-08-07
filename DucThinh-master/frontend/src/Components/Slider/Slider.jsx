@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from "react-router-dom";
-import { ChevronRight, ChevronLeft, ArrowRight } from "lucide-react";
-import '../Navbar/Navbar.css'
+import { Link } from 'react-router-dom';
+import { ChevronRight, ChevronLeft, ArrowRight } from 'lucide-react';
 import './Slider.css';
 import demoImage from '../Assets/item1.png';
 
@@ -46,8 +45,10 @@ const Slider = () => {
 
     useEffect(() => {
         const updateSlider = () => {
-            const slideWidth = slideRefs.current[0].clientWidth;
-            sliderWrapperRef.current.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+            if (sliderWrapperRef.current) {
+                const slideWidth = slideRefs.current[0].clientWidth;
+                sliderWrapperRef.current.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+            }
         };
 
         const handleTransitionEnd = () => {
@@ -72,34 +73,53 @@ const Slider = () => {
     return (
         <div className="slider" onMouseEnter={stopAutoSlide} onMouseLeave={startAutoSlide}>
             <div className="slider-container">
-                <button className="nav prev" onClick={moveToPrevSlide}><ChevronLeft size={20} absoluteStrokeWidth /></button>
+                <button className="nav prev" onClick={moveToPrevSlide}>
+                    <ChevronLeft size={20} />
+                </button>
                 <div className="slider-wrapper" ref={sliderWrapperRef}>
                     {slides.map((slide, index) => (
                         <Slide key={index} slide={slide} slideRefs={slideRefs} />
                     ))}
                 </div>
-                <button className="nav next" onClick={moveToNextSlide}><ChevronRight size={20} absoluteStrokeWidth /></button>
+                <button className="nav next" onClick={moveToNextSlide}>
+                    <ChevronRight size={20} />
+                </button>
             </div>
         </div>
     );
 };
 
 const Slide = ({ slide, slideRefs }) => {
+    const refCallback = (el) => {
+        if (el && !slideRefs.current.includes(el)) {
+            slideRefs.current.push(el);
+        }
+    };
+
     return (
-      <div className="slide" ref={(el) => slideRefs.current.push(el)}>
-          <img className="bg-image" src={slide.imgSrc} alt={`Slide ${slide.title}`} />
-          <div className="slide-content">
-              <h3>{slide.title}</h3>
-              <h1>{slide.title2}</h1>
-              <div className="slide-description">
-                  <p>{slide.description}</p>
-              </div>
-              <div className="slide-button nav-login-cart">
-                  <Link style={{ textDecoration: 'none' }} to='/login'><button style={{ background: '#8262d2' }}>{slide.button}<ArrowRight style={{width: '22px', height: '22px', lineHeight: '30px', marginLeft: '10px'}} /></button></Link>
-                  <Link style={{ textDecoration: 'none' }} to='/login'><button  className="button-none-active" style={{ background: 'transparent' }}>{slide.button2}</button></Link>
-              </div>
-          </div>
-      </div>
+        <div className="slide" ref={refCallback}>
+            <img className="bg-image" src={slide.imgSrc} alt={`Slide ${slide.title}`} />
+            <div className="slide-content">
+                <h3>{slide.title}</h3>
+                <h1>{slide.title2}</h1>
+                <div className="slide-description">
+                    <p>{slide.description}</p>
+                </div>
+                <div className="slide-button button-main">
+                    <Link style={{ textDecoration: 'none' }} to='/login'>
+                        <button style={{ background: '#8262d2' }}>
+                            {slide.button}
+                            <ArrowRight style={{ width: '22px', height: '22px', lineHeight: '30px', marginLeft: '10px' }} />
+                        </button>
+                    </Link>
+                    <Link style={{ textDecoration: 'none' }} to='/login'>
+                        <button className="button-none-active" style={{ background: 'transparent' }}>
+                            {slide.button2}
+                        </button>
+                    </Link>
+                </div>
+            </div>
+        </div>
     );
 };
 

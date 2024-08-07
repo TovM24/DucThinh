@@ -10,24 +10,10 @@ const Navbar = () => {
 
     const [menu, setMenu] = useState("shop")
     const menuRef = useRef()
-    
-    const dropdown_toggle = (e) => {
-        menuRef.current.classList.toggle('nav-menu-visible')
-        e.target.classList.toggle('open')
-    }
 
     return (
         <div className="navbar">
-            <div className="nav-logo">
-                {/* <img src={logo} alt=""/> */}
-                <p>Duc Thinh</p>
-            </div>
-
-            {/* // dropdown-container */}
-            <div className="nav-dropdown">
-                <ChevronDown />
-            </div>
-            {/* <img className="nav-dropdown" onClick={dropdown_toggle} src={nav_dropdown} alt="" /> */}
+            <p className="name">Duc Thinh</p>
 
             <ul ref={menuRef} className="nav-menu">
                 <li onClick={() => {setMenu("home")}}><Link className="nav-link" to='/'>Home</Link> {menu === "home" ? <hr/> : <></>} </li>
@@ -39,8 +25,6 @@ const Navbar = () => {
 
             <div className="nav-login-cart">
                 <Link style={{ textDecoration: 'none' }} to='/login'><button style={{ background: '#8262d2' }}><User/><p>Login/Register</p></button></Link>
-                {/* <Link to='/cart'><ShoppingCart style={{ width: '35px', height: '35px' }}/></Link> */}
-                {/* <div className="nav-cart-count">{getTotalCartItems()}</div> */}
             </div>
         </div>
     )

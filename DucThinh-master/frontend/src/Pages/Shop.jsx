@@ -4,7 +4,7 @@ import Popular from '../Components/Category/Category.jsx';
 import Offers from '../Components/Offers/Offers';
 // import NewCollections from '../Components/NewCollections/NewCollections';
 import BrandProduct from '../Components/BrandProduct/BrandProduct'
-import NewsLetter from '../Components/NewsLetter/NewsLetter';
+// import NewsLetter from '../Components/NewsLetter/NewsLetter';
 import TrendingTech from '../Components/TrendingTech/TrendingTech.jsx';
 import OffersBanner from '../Components/OffersBanner/OffersBanner.jsx';
 
@@ -15,12 +15,12 @@ const Shop = () => {
             <Slider/>
             <Popular/>
             <BrandProduct/>
+            <TrendingTech/>
+            {/* <OffersBanner/>
             <Offers/>
-            {/*<TrendingTech/>*/}
             <OffersBanner/>
-            {/*<TrendingTech/>*/}
-            <Offers/>
-            <NewsLetter/>
+            <Offers/> */}
+            {/* <NewsLetter/> */}
         </div>
     )
 }
