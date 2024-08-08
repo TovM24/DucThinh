@@ -7,6 +7,7 @@ import BrandProduct from '../Components/BrandProduct/BrandProduct'
 // import NewsLetter from '../Components/NewsLetter/NewsLetter';
 import TrendingTech from '../Components/TrendingTech/TrendingTech.jsx';
 import OffersBanner from '../Components/OffersBanner/OffersBanner.jsx';
+import DemoCarousel from '../Components/demoCarousel/Demo.jsx';
 
 
 const Shop = () => {
@@ -16,6 +17,7 @@ const Shop = () => {
             <Popular/>
             <BrandProduct/>
             <TrendingTech/>
+            <DemoCarousel/>
             {/* <OffersBanner/>
             <Offers/>
             <OffersBanner/>
